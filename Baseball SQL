@@ -151,6 +151,17 @@ HAVING
 ORDER BY 
     sum(strikes) DESC
     
+--Which type of pitches earned the most balls
+SELECT 
+    sum(balls) AS total_balls, pitchTypeDescription, 
+FROM 
+    testing-project-340107.baseball.games_post_wide
+GROUP BY 
+    pitchTypeDescription
+HAVING 
+    pitchTypeDescription != ''
+ORDER BY 
+    sum(balls) DESC
     
 --Why not do a join with regular season data as well
 SELECT 
