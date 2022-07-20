@@ -1,5 +1,5 @@
-#This is SQL exploring the `bigquery-public-data.baseball.games_post_wide` dataset. I transferred copies to my own personal testing-project-340107 dataset so I didn't
-have to worry about permissions as much. If you ctrl H and replace 'testing-project-340107' with `bigquery-public-data' these can be run.
+--This is SQL exploring the `bigquery-public-data.baseball.games_post_wide` dataset. I transferred copies to my own personal testing-project-340107 dataset so I didn't
+--have to worry about permissions as much. If you ctrl H and replace 'testing-project-340107' with `bigquery-public-data' these can be run.
 --Fastest pitchers in the Playoffs
 
 SELECT 
