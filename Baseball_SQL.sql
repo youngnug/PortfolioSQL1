@@ -30,7 +30,6 @@ ORDER BY
 
 
 --Average pitch speed for lefty pitchers
-/*
 SELECT 
    ROUND(AVG(pitchspeed),1) AS avg_speed, COUNT(pitcherid) as numofpitches ,pitcherLastName, pitcherfirstname, pitcherThrowHand
 FROM 
@@ -46,7 +45,6 @@ ORDER BY
 
 
 --Average pitch speed for righty pitchers
-/*
 SELECT 
    ROUND(AVG(pitchspeed),1) AS avg_speed,COUNT(pitcherid) as numofpitches, pitcherLastName, pitcherfirstname, pitcherThrowHand
 FROM 
@@ -62,7 +60,6 @@ ORDER BY
 
 
 -- Number of lefty and righty pitchers. I do not have this controlled for pitches who have thrown at least 100 pitches because I wanted to see difference in its entirety.
-/*
 SELECT pitcherthrowhand,
     
     COUNT(DISTINCT(pitcherid)) AS NumberofPitchers
@@ -76,7 +73,6 @@ HAVING
 
 --Using # of pitchers to get average type of pitch thrown per game by lefty and righty pitchers
 -- Right handed pitchers variation
-/*
 SELECT 
     COUNT(pitchtypedescription)/65 AS thrownpergame,pitcherthrowhand, pitchtypedescription
 FROM 
